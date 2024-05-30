@@ -1,0 +1,265 @@
+*{
+    font-family: "Radio Canada Big", sans-serif;
+}
+.gradient-background {
+	background: linear-gradient(-45deg, #F6F5F2, #F0EBE3, #F3D0D7, #FFEFEF);
+	background-size: 180% 180%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes typing {
+    from {width: 0;}
+    to {width: 100%;}
+  }
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #a04255; }
+  }
+#typewriter{
+    display: inline-block;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #a04255; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .03em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+
+img[alt="profile picture"] {
+    border-radius: 50%;
+}
+.about-me{
+    background-color: #F0EBE3;
+    height: 100vh;
+}
+
+.about-me img{
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+}
+
+.in-para{
+    color: #a04255;
+}
+
+.skills{
+    background-color: #FFEFEF;
+    height: 100vh;
+}
+.skills .card-body{
+    background-color: #F6F5F2;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.skills .container .btn{
+    color: white;
+    font-size: 20px;
+    background-color: #a04255;
+    border: none;
+    border-radius: 12px;
+    margin: 4px;
+}
+.btn-group-1{
+    display: inline-block;
+    gap: 5px;
+}
+
+.skills .container button:hover{
+    background-color: #F3D0D7;
+    color: black;
+}
+.more{
+    background-image: url(./assets/minimal-star-pattern-with-pastel-background-wallpaper-illustration_53876-108348.avif);
+    height: 100vh;
+}
+.carousel-head{
+    padding-top: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+.more .carousel{
+    padding-top: 30px;
+    width: 600px;
+}
+.carousel-item img{
+    height: 500px;
+}
+
+.footer{
+    background-color: #FFEFEF;
+    margin: 0;
+    
+    padding-bottom: 5px;
+}
+
+@media (max-width: 320px){
+    .about-me .text-center .pb-3{
+        height: 100px;
+    }
+    .footer .nav{
+        align-items: center;
+    }
+}
+@media (min-width: 576px){
+    footer{
+        height: 100%;
+    }
+}
+
+@media (max-width: 478px) and (min-width: 320px){
+    .gradient-background{
+        height: 100%;
+        padding-left: 15px;
+    }
+    .about-me{
+        height: 100%;
+    }
+    .about-me .text-center .pb-3{
+        height: 150px;
+    }
+    .skills{
+        padding-top: 15px;
+        height: 100%;
+        padding-bottom: 10px;
+    }
+    .more{
+        height: 100%;
+    }
+    .more .carousel{
+        width: 300px;
+    }
+    .carousel-item img{
+        height: 200px;
+    }
+    .footer .nav{
+        align-items: center;
+    }
+    @keyframes typing {
+        from {width: 0;}
+        to {width: 93%;}
+      }
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: #a04255; }
+      }
+    #typewriter{
+        animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+    }
+    
+}
+
+@media (min-width: 478px) and (max-width: 576px){
+    .gradient-background{
+        height: 100%;
+        padding-left: 15px;
+    }
+    .about-me{
+        height: 100%;
+    }
+    .about-me .text-center .pb-3{
+        height: 170px;
+    }
+    .skills{
+        height: 100%;
+    }
+    .more{
+        height: 100%;
+    }
+    .more .carousel{
+        width: 400px;
+    }
+    .carousel-item img{
+        height: 300px;   
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 720px){
+    .gradient-background{
+        height: 100%;
+        padding-left: 15px;
+    }
+    .about-me{
+        height: 100%;
+    }
+    .about-me .text-center .pb-3{
+        height: 200px;
+    }
+    
+    .skills{
+        padding-top: 15px;
+        height: 100%;
+        padding-bottom: 10px;
+    }
+    @keyframes typing {
+        from {width: 0;}
+        to {width: 72%;}
+      }
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: #a04255; }
+      }
+    #typewriter{
+        animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+    }
+}
+
+@media (min-width: 720px) and (max-width: 1000px){
+    .gradient-background{
+        height: 100%;
+        padding-left: 15px;
+    }
+    .about-me{
+        height: 100%;
+    }
+    .skills{
+        padding-top: 15px;
+        height: 100%;
+        padding-bottom: 10px;
+    }
+}
+
+@media (min-width: 1000px){
+    .about-me{
+        height: 100%;
+    }
+    .skills{
+        padding-top: 15px;
+        height: 100%;
+        padding-bottom: 10px;
+    }
+    @keyframes typing {
+        from {width: 0;}
+        to {width: 87%;}
+      }
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: #a04255; }
+      }
+    #typewriter{
+        animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+    }
+}
